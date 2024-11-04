@@ -1,0 +1,18 @@
+<<<<<<<<<<< ------- HERE ARE THE USEFUL YOUTUBE LINKS THAT I USED ------- >>>>>>>>>>>>
+
+# About Roboflow
+
+https://www.youtube.com/watch?v=aBVGKoNZQUw
+
+
+
+# Training Model
+
+https://www.youtube.com/watch?v=iy34dSwfEsY&t=1884s
+
+https://www.youtube.com/watch?v=dl7rCmvIyiI&t=585s
+
+
+
+" Sharing is Caring "
+        -Chan
