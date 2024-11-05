@@ -16,4 +16,6 @@ In this repository, you’ll find:
 - Machine learning models
 - Resources for data preprocessing
 - Scripts for data visualization
+- Sample Result Output
+- Resources (Youtube Video Links, Websites etc.)
 - ... and more!
