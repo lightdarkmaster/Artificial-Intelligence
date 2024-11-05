@@ -8,7 +8,7 @@ This repository is intended for my Artificial Intelligence related projects. All
 
 > Click the image below to watch the full video on YouTube.
 
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/8cVeS8YNd2g)
+[![Watch the demo](https://github.com/lightdarkmaster/Artificial-Intelligence/blob/main/Assets/thumbnail/thumbnail.jpg)](https://youtu.be/8cVeS8YNd2g)
 
 ---
 
