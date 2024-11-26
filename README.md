@@ -20,7 +20,11 @@ In this repository, you’ll find:
 - Resources (Youtube Video Links, Websites etc.)
 
 # Some Notable Projects base on this Repository
-1. Seedscan
-2. Petchay Doctor
-3. Potato Disease Classification Mobile App
-4. DetectMe
+## Mobile Applications
+1. [Seedscan](https://github.com/lightdarkmaster/seedscan)
+2. [Petchay Doctor ](https://github.com/lightdarkmaster/petchay_doctor)
+3. [Potato Disease Classification Mobile App ](https://github.com/lightdarkmaster/potato_disease_classification_mobile_app)
+4. [DetectMe](https://github.com/lightdarkmaster/detectme)
+
+## Web Application
+1. [Potato Disease Classification](https://github.com/lightdarkmaster/potato_disease_classification_web_app)
