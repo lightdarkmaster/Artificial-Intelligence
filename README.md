@@ -18,4 +18,9 @@ In this repository, you’ll find:
 - Scripts for data visualization
 - Sample Result Output
 - Resources (Youtube Video Links, Websites etc.)
-- ... and more!
+
+# Some Notable Projects base on this Repository
+1. Seedscan
+2. Petchay Doctor
+3. Potato Disease Classification Mobile App
+4. DetectMe
