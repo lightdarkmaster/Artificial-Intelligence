@@ -29,3 +29,8 @@ In this repository, you’ll find:
 ## Web Application
 1. [Potato Disease Classification](https://github.com/lightdarkmaster/potato_disease_classification_web_app)
 ## Soon more models to be uploaded..
+
+
+# Resources:
+1. [Llama](https://ollama.com/search)
+2. 
