@@ -18,6 +18,7 @@ In this repository, you’ll find:
 - Scripts for data visualization
 - Sample Result Output
 - Resources (Youtube Video Links, Websites etc.)
+- Guides and Instructions.
 
 # Some Notable Projects base on this Repository
 ## Mobile Applications
@@ -33,4 +34,5 @@ In this repository, you’ll find:
 
 # Resources:
 1. [Llama](https://ollama.com/search)
-2. 
+2. [python](https://www.python.org/)
+3. [Yolo Training](https://www.youtube.com/watch?v=wuZtUMEiKWY&t=749s)
