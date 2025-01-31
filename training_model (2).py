@@ -141,7 +141,46 @@ def train_model(model: ILLMModel, train_dataloader: DataLoader, epochs: int = 3,
 
         avg_loss = total_loss / len(train_dataloader)
         logging.info("Epoch %d/%d completed. Average Loss: %.4f", epoch + 1, epochs, avg_loss)
+        
+def optimize_model():
+    def optimize_model(model: ILLMModel, train_dataloader: DataLoader, epochs: int = 3, lr: float = 5e-5) -> None:
+        model.train()
+        optimizer = torch.optim.AdamW(model.model.parameters(), lr=lr)
+        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.1)
+        pad_token_id = getattr(model.tokenizer, 'pad_token_id', 0)
 
+        for epoch in range(epochs):
+            total_loss = 0
+            for batch_idx, batch in enumerate(train_dataloader):
+                input_ids = batch["input_ids"].to(device)
+                labels = batch["labels"].to(device)
+
+                optimizer.zero_grad()
+                seqlens = (input_ids != pad_token_id).sum(dim=1)
+
+                try:
+                    outputs = model.model(input_ids=input_ids, seqlens=seqlens)
+                    if isinstance(outputs, tuple):
+                        logits = outputs[0]
+                    else:
+                        logits = outputs
+
+                    loss_fn = torch.nn.CrossEntropyLoss(ignore_index=-100)
+                    loss = loss_fn(logits.view(-1, logits.size(-1)), labels.view(-1))
+
+                    loss.backward()
+                    optimizer.step()
+                    total_loss += loss.item()
+
+                except Exception as e:
+                    logging.error("Error during model forward pass: %s", e)
+                    logging.error("Batch index: %d, Input IDs shape: %s, Labels shape: %s",
+                                  batch_idx, input_ids.shape, labels.shape)
+
+            scheduler.step()
+            avg_loss = total_loss / len(train_dataloader)
+            logging.info("Epoch %d/%d completed. Average Loss: %.4f", epoch + 1, epochs, avg_loss)
+                
 # Define the main function
 def main():
     conversations = [
