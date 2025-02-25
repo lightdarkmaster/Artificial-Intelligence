@@ -5,7 +5,7 @@ conn = http.client.HTTPSConnection("chatgpt-42.p.rapidapi.com")
 payload = "{\"messages\":[{\"role\":\"user\",\"content\":\"hello\"}],\"web_access\":false}"
 
 headers = {
-    'x-rapidapi-key': "1e56fad3d4msh7bab8226712579fp191893jsn61d384b0f6a2",
+    'x-rapidapi-key': "",
     'x-rapidapi-host': "chatgpt-42.p.rapidapi.com",
     'Content-Type': "application/json"
 }
